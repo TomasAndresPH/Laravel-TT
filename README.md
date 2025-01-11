@@ -19,9 +19,8 @@ cp .env.example .env     # Linux/Mac
 php artisan key:generate  
 5. Configurar Base de Datos  
 
-Iniciar Apache y MySQL desde XAMPP
-
-Opción 1 (Local)
+Opción 1 (Local)  
+Iniciar Apache y MySQL desde XAMPP  
 
 Ir a http://localhost/phpmyadmin  
 Crear una nueva base de datos llamada "geniafy"  
