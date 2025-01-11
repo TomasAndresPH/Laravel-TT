@@ -10,14 +10,14 @@ XAMPP con MySQL y Apache
 
 Instrucciones de Instalación
 1. Clonar el repositorio
-2. Instalar dependencias de Composer
+2. Instalar dependencias de Composer  
 composer install
-3. Crear una copia del archivo .env
-copy .env.example .env    # Windows
-cp .env.example .env     # Linux/Mac
-4. Generar la clave de la aplicación
-php artisan key:generate
-5. Configurar Base de Datos
+3. Crear una copia del archivo .env  
+copy .env.example .env    # Windows  
+cp .env.example .env     # Linux/Mac  
+4. Generar la clave de la aplicación  
+php artisan key:generate  
+5. Configurar Base de Datos  
 
 Iniciar Apache y MySQL desde XAMPP
 
