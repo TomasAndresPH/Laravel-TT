@@ -26,13 +26,7 @@ Opción 1 (Local)
 
 Ir a http://localhost/phpmyadmin  
 Crear una nueva base de datos llamada "geniafy"  
-Configurar en el archivo .env:  
-DB_CONNECTION=mysql  
-DB_HOST=127.0.0.1  
-DB_PORT=3306  
-DB_DATABASE=geniafy  
-DB_USERNAME=root  
-DB_PASSWORD=  
+Configurar en el archivo .env (REVISAR INSTRUCCIONES EN .env COPIADO)
 
 Opción 2 (Base de datos remota)  
 
