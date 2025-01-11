@@ -24,25 +24,24 @@ Iniciar Apache y MySQL desde XAMPP
 
 Opción 1 (Local)
 
-Ir a http://localhost/phpmyadmin
-Crear una nueva base de datos llamada "geniafy"
-Configurar en el archivo .env:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=geniafy
-DB_USERNAME=root
-DB_PASSWORD=
+Ir a http://localhost/phpmyadmin  
+Crear una nueva base de datos llamada "geniafy"  
+Configurar en el archivo .env:  
+DB_CONNECTION=mysql  
+DB_HOST=127.0.0.1  
+DB_PORT=3306  
+DB_DATABASE=geniafy  
+DB_USERNAME=root  
+DB_PASSWORD=  
 
+Opción 2 (Base de datos remota)  
 
-Opción 2 (Base de datos remota)
+Descomentar en el archivo .env la sección de base de datos remota que incluye las credenciales de db4free.net  
 
-Descomentar en el archivo .env la sección de base de datos remota que incluye las credenciales de db4free.net
-
-6. Crear y poblar la base de datos
-php artisan migrate --seed
-7. Iniciar el servidor
-php artisan serve
+6. Crear y poblar la base de datos  
+php artisan migrate --seed  
+7. Iniciar el servidor   
+php artisan serve  
 
 Uso
 Acceder a la lista de usuarios: http://localhost:8000/usuarios
