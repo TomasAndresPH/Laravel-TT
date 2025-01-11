@@ -12,30 +12,22 @@
         crossorigin="anonymous">
 
     <style>
-        /* Variables CSS personalizadas */
         :root {
             --pagination-color: #000000;
-            /* Color principal */
             --pagination-hover-color: #000000;
-            /* Color al pasar el mouse */
             --pagination-active-color: #000000;
-            /* Color del botón activo */
         }
 
-        /* Agregar esto a tu sección de estilos */
         .pagination .page-item {
             margin: 0 3px;
-            /* Puedes ajustar este valor para más o menos separación */
+
         }
 
-        /* O si prefieres una separación más específica */
         .pagination .page-link {
             margin: 0 3px;
             border-radius: 3px;
-            /* Esto hará que cada botón tenga esquinas redondeadas individualmente */
         }
 
-        /* Estilos de paginación */
         .pagination .page-link {
             color: var(--pagination-color);
             background-color: transparent;
@@ -93,7 +85,7 @@
                 const response = await fetch(`/api/usuarios?page=${page}`);
                 const data = await response.json();
 
-                // Poblar la tabla (esta parte queda igual)
+                // Crear la tabla de usuarios
                 const table = document.getElementById('users-table');
                 table.innerHTML = '';
                 data.data.forEach((user, index) => {
@@ -112,7 +104,7 @@
                 const links = document.getElementById('pagination-links');
                 links.innerHTML = '';
 
-                // Botón Previous
+                // Botón anterior
                 links.innerHTML += `
                     <li class="page-item ${data.current_page <= 1 ? 'disabled' : ''}">
                         <a class="page-link" href="#" onclick="fetchUsers(${data.current_page - 1}); return false;">
@@ -132,7 +124,7 @@
                     `;
                 }
 
-                // Botón Next
+                // Botón Siguiente
                 links.innerHTML += `
                     <li class="page-item ${data.current_page >= data.last_page ? 'disabled' : ''}">
                         <a class="page-link" href="#" onclick="fetchUsers(${data.current_page + 1}); return false;">
