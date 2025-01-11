@@ -35,5 +35,4 @@ php artisan migrate --seed
 7. Iniciar el servidor   
 php artisan serve  
 
-Uso
 Acceder a la lista de usuarios: http://localhost:8000/usuarios
