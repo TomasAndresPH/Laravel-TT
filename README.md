@@ -10,7 +10,6 @@ XAMPP con MySQL y Apache
 
 Instrucciones de Instalación
 1. Clonar el repositorio
-git clone [URL_DEL_REPOSITORIO]
 2. Instalar dependencias de Composer
 composer install
 3. Crear una copia del archivo .env
