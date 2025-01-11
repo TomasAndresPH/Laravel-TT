@@ -1,8 +1,9 @@
 API de Usuarios  
+
 Descripción  
 Esta es una API desarrollada con Laravel que gestiona una lista de usuarios. Proporciona funcionalidades para visualizar usuarios con paginación y muestra información como nombre, apellido y RUT.  
-Requisitos Previos  
 
+Requisitos Previos  
 PHP >= 8.1  
 Composer instalado  
 XAMPP con MySQL y Apache  
